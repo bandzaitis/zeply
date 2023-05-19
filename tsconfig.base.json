@@ -1,20 +1,34 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2020", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {}
-  },
-  "exclude": ["node_modules", "tmp"]
+	"compileOnSave": false,
+	"compilerOptions": {
+		"rootDir": ".",
+		"sourceMap": true,
+		"declaration": false,
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"target": "es2015",
+		"module": "esnext",
+		"lib": ["es2020", "dom"],
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"baseUrl": ".",
+		"paths": {
+			"@zeply/api": ["libs/api/src/index.ts"],
+			"@zeply/currency": ["libs/currency/src/index.ts"],
+			"@zeply/ui/address": ["libs/ui/address/src/index.ts"],
+			"@zeply/ui/context": ["libs/ui/context/src/index.ts"],
+			"@zeply/ui/currency-icon": ["libs/ui/currency-icon/src/index.ts"],
+			"@zeply/ui/currency-menu": ["libs/ui/currency-menu/src/index.ts"],
+			"@zeply/ui/layout": ["libs/ui/layout/src/index.ts"],
+			"@zeply/ui/money": ["libs/ui/money/src/index.ts"],
+			"@zeply/ui/search": ["libs/ui/search/src/index.ts"],
+			"@zeply/ui/subscription": ["libs/ui/subscription/src/index.ts"],
+			"@zeply/ui/top": ["libs/ui/top/src/index.ts"],
+			"@zeply/ui/transaction": ["libs/ui/transaction/src/index.ts"],
+			"@zeply/util": ["libs/util/src/index.ts"]
+		}
+	},
+	"exclude": ["node_modules", "tmp"]
 }

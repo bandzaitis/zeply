@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Search {
+  id        Int     @id @default(autoincrement())
+  hash      String  @unique
+  isAddress Boolean
+  count     Int     @default(0)
+}
+
+model Subscription {
+  id        Int     @id @default(autoincrement())
+  hash      String  @unique
+  isAddress Boolean
+}
